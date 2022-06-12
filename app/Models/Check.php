@@ -9,5 +9,10 @@ class Check extends Model
 {
     use HasFactory;
 
-    protected $guard = [];
+    protected $fillable = [
+        'response_status',
+        'response_content',
+        'elapsed_time',
+        'site_id'
+    ];
 }
